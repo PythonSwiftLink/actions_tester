@@ -18,12 +18,18 @@ jobs:
   mainjob1:
     runs-on: macos-latest
     outputs:
-      var1: ${{ steps.set_var.outputs.var1 }}
+      sha: ${{ steps.shasum.outputs.var }}
+      version: ${{ steps.version.outputs.var }}
     steps:
       - name: Set Variable
-        id: set_var
+        id: shasum
         run: |
-          echo "var1=good" >> $GITHUB_OUTPUT
+          echo "var=good" >> $GITHUB_OUTPUT
+
+      - name: Set Variable
+        id: version
+        run: |
+            echo "var=0.1" >> $GITHUB_OUTPUT
 
   mainjob2:
     needs: mainjob1
