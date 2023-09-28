@@ -21,6 +21,10 @@ jobs:
       sha: ${{ steps.shasum.outputs.var }}
       version: ${{ steps.version.outputs.var }}
     steps:
+      
+      - uses: actions/checkout@v4  
+      #- name: Build Release    
+    
       - name: Set Variable
         id: shasum
         run: |
