@@ -17,11 +17,13 @@ on:
 jobs:
   mainjob1:
     runs-on: ubuntu-latest
-
+    outputs:
+      var1: ${{ steps.set_var.outputs.var1 }}
     steps:
       - name: Set Variable
+        id: set_var
         run: |
-          echo "var1=good" >> $env:GITHUB_ENV
+          echo "var1=good" >> $GITHUB_OUTPUT
 
   mainjob2:
     needs: mainjob1
@@ -31,4 +33,4 @@ jobs:
 
       - name: Access Variable
         run: |
-          echo "var1=${{ env.var1 }}"
+          echo "var1=${{ needs.mainjob1.outputs.var1 }}"
