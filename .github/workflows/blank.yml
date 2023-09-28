@@ -47,4 +47,4 @@ jobs:
 
       - name: Access Variable
         run: |
-          echo "var1=${{ needs.mainjob1.outputs.var1 }}"
+          echo "var1=${{ needs.mainjob1.outputs.sha }}"
