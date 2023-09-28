@@ -56,5 +56,5 @@ jobs:
 
       - name: Access Variable
         run: |
-          echo "${{ needs.mainjob1.outputs.sha }}"
+          echo "${{ needs.mainjob1.outputs.version }}"
           echo "${{ needs.mainjob1.outputs.sha }}"
