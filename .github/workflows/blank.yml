@@ -81,3 +81,18 @@ jobs:
       - name: generate cookie
         run: python3.10 generate_formula.py ${{ needs.mainjob1.outputs.version }} ${{ needs.mainjob1.output.sha }}
 
+      - name: clone tools and update
+        run: |
+            git clone https://github.com/pythonswiftlink/homebrew-tools
+            cp -f homebrew_formula/* homebrew-tools/Formula/s/
+
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.Homebrew }}
+        with:
+          source-directory: 'homebrew-tools'
+          destination-github-username: 'pythonswiftlink'
+          destination-repository-name: 'homebrew-tools'
+          user-email: pythonswiftlink@gmail.com
+          target-branch: master
