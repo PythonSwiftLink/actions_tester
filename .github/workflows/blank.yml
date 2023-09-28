@@ -27,7 +27,14 @@ jobs:
     steps:
       
       - uses: actions/checkout@v4  
-      #- name: Build Release    
+      - name: Build Release    
+        run: | 
+              #swift build -c release --disable-sandbox --arch arm64 --arch x86_64
+              mkdir release
+              #cp -rf .build/apple/Products/Release/SwiftonizeExecutable release/Swiftonize
+              #cp -rf python_stdlib release/python_stdlib
+              #cp -rf python-extra release/python-extra
+              #tar -C ./release/ -czvf ./swiftonize.tar.gz ./    
       
       - name: Set Variable
         id: shasum
