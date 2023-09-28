@@ -20,6 +20,10 @@ jobs:
     outputs:
       sha: ${{ steps.shasum.outputs.var }}
       version: ${{ steps.version.outputs.var }}
+
+    permissions:
+      contents: write
+      
     steps:
       
       - uses: actions/checkout@v4  
