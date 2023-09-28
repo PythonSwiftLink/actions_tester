@@ -9,8 +9,8 @@ let package = Package(
 	dependencies: [
 		.package(url: "https://github.com/PythonSwiftLink/PythonLib", from: "0.1.0"),
 		.package(url: "https://github.com/PythonSwiftLink/PythonSwiftCore", branch: "testing"),
-		.package(path: "../Swiftonize"),
-		//.package(url: "https://github.com/PythonSwiftLink/Swiftonize", branch: "testing"),
+		//.package(path: "../Swiftonize"),
+		.package(url: "https://github.com/PythonSwiftLink/Swiftonize", branch: "testing"),
 		.package(url: "https://github.com/kylef/PathKit", from: .init(1, 0, 0) ),
 		.package(url: "https://github.com/apple/swift-syntax", from: .init(508, 0, 0) ),
 		
