@@ -1,0 +1,77 @@
+{
+  "pins" : [
+    {
+      "identity" : "pathkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kylef/PathKit",
+      "state" : {
+        "revision" : "3bfd2737b700b9a36565a8c94f4ad2b050a5e574",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "pyastparser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PythonSwiftLink/PyAstParser",
+      "state" : {
+        "branch" : "main",
+        "revision" : "5d843c5d7acaacfaadc458c6e02cf9125284a832"
+      }
+    },
+    {
+      "identity" : "pythonlib",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PythonSwiftLink/PythonLib",
+      "state" : {
+        "revision" : "04cefa15c383f58bbc2836d76912031cfa5978b9",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "pythonswiftcore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PythonSwiftLink/PythonSwiftCore",
+      "state" : {
+        "branch" : "testing",
+        "revision" : "5ee9a35521e14a97573557168bff0432626c4adf"
+      }
+    },
+    {
+      "identity" : "spectre",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kylef/Spectre.git",
+      "state" : {
+        "revision" : "26cc5e9ae0947092c7139ef7ba612e34646086c7",
+        "version" : "0.10.1"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser",
+      "state" : {
+        "revision" : "8f4d2753f0e4778c76d5f05ad16c74f707390531",
+        "version" : "1.2.3"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax",
+      "state" : {
+        "revision" : "2c49d66d34dfd6f8130afdba889de77504b58ec0",
+        "version" : "508.0.1"
+      }
+    },
+    {
+      "identity" : "swiftyjson",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyJSON/SwiftyJSON",
+      "state" : {
+        "branch" : "master",
+        "revision" : "af1f7a2007d607fbe735c445f19080df4260fe8e"
+      }
+    }
+  ],
+  "version" : 2
+}
