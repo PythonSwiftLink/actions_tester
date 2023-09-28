@@ -79,7 +79,7 @@ jobs:
           pip3 install cookiecutter
         
       - name: generate cookie
-        run: python3.10 generate_formula.py ${{ needs.mainjob1.outputs.version }} ${{ needs.mainjob1.output.sha }}
+        run: python3.10 generate_formula.py ${{ needs.mainjob1.outputs.version }} ${{ needs.mainjob1.outputs.sha }}
 
       - name: clone tools and update
         run: |
