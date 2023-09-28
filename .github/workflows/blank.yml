@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   mainjob1:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     outputs:
       var1: ${{ steps.set_var.outputs.var1 }}
     steps:
