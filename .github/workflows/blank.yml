@@ -47,7 +47,13 @@ jobs:
         id: version
         run: |
             echo "var=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_OUTPUT
-
+      
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: "swiftonize.tar.gz"
+          token: ${{ secrets.Homebrew }}
+          allowUpdates: true
+        
   mainjob2:
     needs: mainjob1
     runs-on: ubuntu-latest
